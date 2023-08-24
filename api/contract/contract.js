@@ -1,7 +1,7 @@
 const {Web3}= require("web3");
 const ABI = require("../ABI.json");
-const web3 = new Web3("https://crimson-dawn-patina.ethereum-sepolia.discover.quiknode.pro/47d071f4d9ceb04a91320d33bb735897a7691c20/")
-const contractAddress = "0x795e47574f11055806e294f1b95090cd46ececdd";
+const web3 = new Web3("https://eth-sepolia.g.alchemy.com/v2/74mlskD0sX4li0gK-ljIuG7LRVW135la")
+const contractAddress = "0x1d0a7A032e32cEd928131Dcf4856455A36ED7454";
 const contract = new web3.eth.Contract(ABI,contractAddress);
 
 module.exports={contract}
